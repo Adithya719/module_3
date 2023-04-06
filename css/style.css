@@ -1,0 +1,96 @@
+.navbar {
+    background-color: #1abc9c; /* Set background color */
+    overflow: hidden;
+  }
+  .main {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 50px;
+}
+
+.description {
+max-width: 300px;
+margin: 20px;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+text-align: center;
+}
+
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px; /* Add extra padding */
+    text-decoration: none;
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+  }
+  .navbar a:hover {
+    background-color: #16a085; /* Set hover background color */
+    color: white;
+  }
+  .navbar .logo {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px; /* Add extra padding */
+    text-decoration: none;
+    font-size: 22px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+  }
+  /* Collapsible menu styles */
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 15px 20px; /* Add extra padding */
+    }
+    .navbar .logo {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 15px 20px; /* Add extra padding */
+    }
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {
+      position: relative;
+    }
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 15px 20px; /* Add extra padding */
+    }
+    .navbar.responsive .logo {
+      float: none;
+      display: block;
+      text-align: center;
+      padding: 15px 20px; /* Add extra padding */
+    }
+    .navbar.responsive a:not(:first-child) {
+      display: block;
+    }
+  }

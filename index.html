@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar" id="myNavbar">
+      <a href="#" class="logo">FOOD,LLC</a>
+      <a href="#chicken">Chicken</a>
+      <a href="#sushi">Sushi</a>
+      <a href="#beef">Beef</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+
+    <!-- Script for collapsible menu -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+    <div class="main">
+      <div id="chicken" class="description">
+        <h2>Chicken</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod turpis id justo finibus blandit. Proin faucibus, velit a sagittis semper, augue massa fringilla orci, ut tempus ipsum nisi id sapien.</p>
+      </div>
+      <div id="sushi" class="description">
+        <h2>Sushi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod turpis id justo finibus blandit. Proin faucibus, velit a sagittis semper, augue massa fringilla orci, ut tempus ipsum nisi id sapien.</p>
+      </div>
+      <div id="beef" class="description">
+        <h2>Beef</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod turpis id justo finibus blandit. Proin faucibus, velit a sagittis semper, augue massa fringilla orci, ut tempus ipsum nisi id sapien.</p>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
